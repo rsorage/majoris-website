@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
 
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -56,10 +58,10 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center probootstrap-hero-text pb0 probootstrap-animate" data-animate-effect="fadeIn">
             <h1>Controlar o estoque nunca foi tão simples</h1>
-            <p>Esqueça as telas confusas e cheias de funções. O Majoris tem aquilo que você precisa, do jeito mais fácil, e por apenas <b>R$35</b> por mês.</p>
+            <p>Esqueça as telas confusas e cheias de funções. O Majoris oferece controle dos produtos em estoque, entradas e saídas, e personalização de acordo com as necessidades da sua empresa.</p>
             <p>
               <a href="../form/index.html" class="btn btn-primary btn-lg" role="button">Cadastre-se</a>
-              <a href="../form/index.html" class="btn btn-primary btn-ghost btn-lg" role="button">Experimente</a>
+              <a href="#features" class="btn btn-primary btn-ghost btn-lg" role="button">Saiba mais</a>
             </p>
             <!-- <p><a href="#"><i class="icon-play2"></i> Watch the video</a></p> -->
           </div>
@@ -71,27 +73,27 @@
           <div class="col-md-4 col-md-push-8 probootstrap-showcase-nav probootstrap-animate" >
             <ul>
               <li class="active">
-                <a href="#">Produtos</a>
+                <a href="">Produtos</a>
                 <p>Mantenha o cadastro de seus produtos e materiais em estoque, com todas as informações que sua empresa precisa.</p>
               </li>
               <li>
-                <a href="#">Estoques</a>
+                <a href="">Estoques</a>
                 <p>Acompanhe a situação de seu estoque em uma tabela simples, fácil de entender e personalizável. Além disso, você pode criar grupos de produtos para facilitar a divisão em categorias.</p>
               </li>
               <li>
-                <a href="#">Entradas</a>
+                <a href="">Entradas</a>
                 <p>Adicione produtos ao estoque criando transações de entrada, seja uma compra ou ajuste. Caso queira adicionar um novo produto, basta criá-lo e, depois, registrar a entrada.</p>
               </li>
               <li>
-                <a href="#">Saídas</a>
+                <a href="">Saídas</a>
                 <p>Registre as transações de saída de produtos do estoque. Você pode registrar saídas de venda, consumo ou ajuste.</p>
               </li>
               <li>
-                <a href="#">Histórico de transações</a>
+                <a href="">Histórico de transações</a>
                 <p> Todas as entradas e saídas ficam salvas na tabela de transações, com todas as informações que forem relevantes para a sua empresa.</p>
               </li>
               <li>
-                <a href="#">Personalização</a>
+                <a href="">Personalização</a>
                 <p>Você pode personalizar sua experiência com o Majoris. Crie grupos de produtos em estoque, adicione informações à tabelas, produtos e transações, e crie filtros personalizados.</p>
               </li>
             </ul>
@@ -366,6 +368,9 @@
     </div>
     <!-- END modal signup -->
 
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.min.js"></script>
   </body>
