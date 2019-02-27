@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-135255257-1','auto');ga('send','pageview');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Majoris</title>
@@ -36,16 +41,15 @@
             <span class="icon-bar"></span>
           </button>
 
-          <div style="display:flex;align-items:center;height:102px;"><img class="logo" src="img/logo@2x.png"></div>
-
+88584755
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li class="probootstra-cta-button"><a href="../form/index.html" class="btn">Cadastrar</a></li>
-            <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#loginModal">Log in</a></li>
+            <li><a href="#features" onclick="ga('send','event','view-features','navbar','home');">Features</a></li>
+            <li><a href="#contato" onclick="ga('send','event','contact','navbar','home');">Contato</a></li>
+            <li class="probootstra-cta-button"><a href="../form/index.html" class="btn" onclick="ga('send','event','register','navbar','home');">Cadastrar</a></li>
+            <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#loginModal" onclick="ga('send','event','login','navbar','home');">Log in</a></li>
           </ul>
         </div>
       </div>
@@ -60,8 +64,8 @@
             <h1>Controlar o estoque nunca foi tão simples</h1>
             <p>Esqueça as telas confusas e cheias de funções. O Majoris oferece controle dos produtos em estoque, entradas e saídas, e personalização de acordo com as necessidades da sua empresa.</p>
             <p>
-              <a href="../form/index.html" class="btn btn-primary btn-lg" role="button">Cadastre-se</a>
-              <a href="#features" class="btn btn-primary btn-ghost btn-lg" role="button">Saiba mais</a>
+              <a href="../form/index.html" class="btn btn-primary btn-lg" role="button" onclick="ga('send','event','register','hero','home');">Cadastre-se</a>
+              <a href="#features" class="btn btn-primary btn-ghost btn-lg" role="button" onclick="ga('send','event','view-features','saiba-mais','home');">Saiba mais</a>
             </p>
             <!-- <p><a href="#"><i class="icon-play2"></i> Watch the video</a></p> -->
           </div>
@@ -73,27 +77,27 @@
           <div class="col-md-4 col-md-push-8 probootstrap-showcase-nav probootstrap-animate" >
             <ul>
               <li class="active">
-                <a href="">Produtos</a>
+                <a href="" onclick="ga('send','event','click-feature','produtos','home');">Produtos</a>
                 <p>Mantenha o cadastro de seus produtos e materiais em estoque, com todas as informações que sua empresa precisa.</p>
               </li>
               <li>
-                <a href="">Estoques</a>
+                <a href="" onclick="ga('send','event','click-feature','estoques','home');">Estoques</a>
                 <p>Acompanhe a situação de seu estoque em uma tabela simples, fácil de entender e personalizável. Além disso, você pode criar grupos de produtos para facilitar a divisão em categorias.</p>
               </li>
               <li>
-                <a href="">Entradas</a>
+                <a href="" onclick="ga('send','event','click-feature','entradas','home');">Entradas</a>
                 <p>Adicione produtos ao estoque criando transações de entrada, seja uma compra ou ajuste. Caso queira adicionar um novo produto, basta criá-lo e, depois, registrar a entrada.</p>
               </li>
               <li>
-                <a href="">Saídas</a>
+                <a href="" onclick="ga('send','event','click-feature','saidas','home');">Saídas</a>
                 <p>Registre as transações de saída de produtos do estoque. Você pode registrar saídas de venda, consumo ou ajuste.</p>
               </li>
               <li>
-                <a href="">Histórico de transações</a>
+                <a href="" onclick="ga('send','event','click-feature','transacoes','home');">Histórico de transações</a>
                 <p> Todas as entradas e saídas ficam salvas na tabela de transações, com todas as informações que forem relevantes para a sua empresa.</p>
               </li>
               <li>
-                <a href="">Personalização</a>
+                <a href="" onclick="ga('send','event','click-feature','personalizacao','home');">Personalização</a>
                 <p>Você pode personalizar sua experiência com o Majoris. Crie grupos de produtos em estoque, adicione informações à tabelas, produtos e transações, e crie filtros personalizados.</p>
               </li>
             </ul>
@@ -182,8 +186,8 @@
 
         <div class="row">
           <div class="col-md-12 text-center">
-            <a href="../form/index.html" class="btn btn-primary btn-lg" role="button">Cadastre-se</a>
-            <a href="../form/index.html" class="btn btn-primary btn-ghost btn-lg" role="button">Experimente</a>
+            <a href="../form/index.html" class="btn btn-primary btn-lg" role="button" onclick="ga('send','event','register','slider','home');">Cadastre-se</a>
+            <a href="../form/index.html" class="btn btn-primary btn-ghost btn-lg" role="button" onclick="ga('send','event','register','experimente','home');">Experimente</a>
           </div>
         </div>
 
@@ -225,7 +229,7 @@
         <div class="row">
           <div class="col-md-12">
             <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Comece a utilizar o Majoris agora mesmo! </h2>
-            <a href="../form/index.html" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Cadastre-se</a>
+            <a href="../form/index.html" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft" onclick="ga('send','event','register','pre-footer','home');">Cadastre-se</a>
           </div>
         </div>
       </div>
@@ -239,8 +243,8 @@
                 <div class="probootstrap-footer-widget">
                   <h3>Links</h3>
                   <ul>
-                    <li><a href="#">Perguntas frequentes</a></li>
-                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#" onclick="ga('send','event','click-faq','footer','home');">Perguntas frequentes</a></li>
+                    <li><a href="#" onclick="ga('send','event','click-jobs','footer','home');">Trabalhe conosco</a></li>
                   </ul>
                 </div>
               </div>
@@ -251,7 +255,7 @@
             <div class="probootstrap-footer-widget">
               <h3 id="contato">Contato</h3>
               <p>Ficou com alguma dúvida? Nossa equipe de atendimento está pronta para te ajudar. Basta entrar em contato conosco através do ícone do atendimento, no canto inferior direito da sua tela, ou pelos canais abaixo.</p>
-              <p><small>E-mail: <a href="mailto:contato@majoris.co">contato@majoris.co</a></small></p>
+              <p><small>E-mail: <a href="mailto:contato@majoris.co" onclick="ga('send','event','click-email','footer','home');">contato@majoris.co</a></small></p>
 
 
             </div>
