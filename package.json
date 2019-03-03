@@ -1,7 +1,7 @@
 {
-  "name": "majoris-ims",
+  "name": "majoris-ims-frontend",
   "version": "1.0.0",
-  "description": "Majoris Stock Keeper Application",
+  "description": "Majoris Stock Keeper Application - frontend",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
