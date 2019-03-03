@@ -27,10 +27,4 @@ function AddLeadCtrl($window, toastr, leadService) {
         toastr.error(err.data.msg, err.data.title);
     }
 
-    function resetFields() {
-        ctrl.data.name = '';
-        ctrl.data.email = '';
-        ctrl.data.company = '';
-        ctrl.data.segment = '';
-    }
 }

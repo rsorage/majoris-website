@@ -1,6 +1,6 @@
 var service = angular.module('RegisterModule', []);
 
-service.constant('baseUrl', 'http://localhost:5400/register')
+service.constant('baseUrl', 'https://majoris-ims.herokuapp.com/register')
 service.service('lead', LeadService);
 
 
