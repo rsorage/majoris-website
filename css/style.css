@@ -686,9 +686,16 @@ a:hover, a:focus, a:active {
   font-size: 17px;
   line-height: 1.5;
 }
+
+.logo-container{
+  display:flex;
+  align-items:center;
+  height:102px;
+}
+
 .logo{
   max-width:120px;
-
+  margin-left:20px;
 }
 
 .btn.btn-primary {
