@@ -687,16 +687,9 @@ a:hover, a:focus, a:active {
   line-height: 1.5;
 }
 
-.logo-container{
-  display:flex;
-  align-items:center;
-  height:102px;
-}
 
 .logo{
   max-width:120px;
-  margin-top:30px !important;
-  margin-left:20px !important;
 }
 
 .btn.btn-primary {
