@@ -1,377 +1,118 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en-US">
   <head>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-135255257-1','auto');ga('send','pageview');
-    </script>
-
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Majoris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="Gerenciamento de estoque simples e barato">
-    <meta name="keywords" content="software controle de estoque simples, gerenciamento estoque, barato">
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
-    <link rel="stylesheet" href="css/styles-merged.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
     <!-- Smooth scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
 
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
+
+    <link id="favicon" rel="shortcut icon" href="images/favicon.png" sizes="16x16 32x32 48x48" type="image/png" />
+    <link id="icon" rel="icon" href="images/icon.png" sizes="256x256" type="image/png" />
+
+
+    <!-- Start Jotform -->
+
+    <link rel="alternate" type="application/json+oembed" href="https://www.jotform.com/oembed/?format=json&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F82745162109658" title="oEmbed Form"><link rel="alternate" type="text/xml+oembed" href="https://www.jotform.com/oembed/?format=xml&amp;url=http%3A%2F%2Fwww.jotform.com%2Fform%2F82745162109658" title="oEmbed Form">
+    <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.7768" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.7768" />
+    <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.7768" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+    <link rel="canonical" href="https://form.jotformz.com/82745162109658" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-blue.css?3.3.7768"/>
+    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.7768" type="text/javascript"></script>
+
+
+
+    <!-- Modal -->
+
+    <!-- End Modal -->
+
+    <script type="text/javascript">
+       JotForm.init(function(){
+          JotForm.alterTexts(undefined);
+    	JotForm.clearFieldOnHide="disable";
+    	JotForm.submitError="jumpToFirstError";
+        /*INIT-END*/
+    });
+
+       JotForm.prepareCalculationsOnTheFly([null,{"name":"pecaSeu","qid":"1","text":"Peca seu convite","type":"control_head"},{"name":"submit2","qid":"2","text":"ENVIAR","type":"control_button"},{"description":"","name":"nome","qid":"3","subLabel":"","text":"Nome","type":"control_textbox"},{"description":"","name":"email4","qid":"4","subLabel":"","text":"E-mail","type":"control_email"},{"description":"","name":"empresa","qid":"5","subLabel":"","text":"Empresa","type":"control_textbox"},{"description":"","name":"cargo","qid":"6","subLabel":"","text":"Cargo","type":"control_textbox"},{"description":"","name":"areaDe","qid":"7","subLabel":"","text":"Area de atuacao da empresa","type":"control_textbox"}]);
+       setTimeout(function() {
+    JotForm.paymentExtrasOnTheFly([null,{"name":"pecaSeu","qid":"1","text":"Peca seu convite","type":"control_head"},{"name":"submit2","qid":"2","text":"ENVIAR","type":"control_button"},{"description":"","name":"nome","qid":"3","subLabel":"","text":"Nome","type":"control_textbox"},{"description":"","name":"email4","qid":"4","subLabel":"","text":"E-mail","type":"control_email"},{"description":"","name":"empresa","qid":"5","subLabel":"","text":"Empresa","type":"control_textbox"},{"description":"","name":"cargo","qid":"6","subLabel":"","text":"Cargo","type":"control_textbox"},{"description":"","name":"areaDe","qid":"7","subLabel":"","text":"Area de atuacao da empresa","type":"control_textbox"}]);}, 20);
+    </script>
+
+
+    <!-- End Jotform -->
+
+    <!-- Analytics -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127673103-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127673103-1');
+    </script>
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Majoris</title>
   </head>
+
+
   <body>
 
-    <!-- Fixed navbar -->
-    <!-- navbar-fixed-top  -->
 
-
-    <nav class="navbar probootstrap-megamenu navbar-default probootstrap-navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div style="display:flex; align-items:center; height:102px;"><img style="margin-left: 20px;" class="logo" src="img/logo@2x.png"></div>
-        </div>
-
-        <div id="navbar-collapse" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#features" onclick="ga('send','event','view-features','navbar','home');">Features</a></li>
-            <li><a href="#contato" onclick="ga('send','event','contact','navbar','home');">Contato</a></li>
-            <li class="probootstra-cta-button"><a href="form/index.html" class="btn" onclick="ga('send','event','register','navbar','home');">Cadastrar</a></li>
-            <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#loginModal" onclick="ga('send','event','login','navbar','home');">Log in</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <section class="probootstrap-hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center probootstrap-hero-text pb0 probootstrap-animate" data-animate-effect="fadeIn">
-            <h1>Controlar o estoque nunca foi tão simples</h1>
-            <p>Esqueça as telas confusas e cheias de funções. O Majoris oferece controle dos produtos em estoque, entradas e saídas, e personalização de acordo com as necessidades da sua empresa.</p>
-            <p>
-              <a href="form/index.html" class="btn btn-primary btn-lg" role="button" onclick="ga('send','event','register','hero','home');">Cadastre-se</a>
-              <a href="#features" class="btn btn-primary btn-ghost btn-lg" role="button" onclick="ga('send','event','view-features','saiba-mais','home');">Saiba mais</a>
-            </p>
-            <!-- <p><a href="#"><i class="icon-play2"></i> Watch the video</a></p> -->
-          </div>
-        </div>
-
-        <div id="features"></div>
-
-        <div class="row probootstrap-feature-showcase" >
-          <div class="col-md-4 col-md-push-8 probootstrap-showcase-nav probootstrap-animate" >
-            <ul>
-              <li class="active">
-                <a href="" onclick="ga('send','event','click-feature','produtos','home');">Produtos</a>
-                <p>Mantenha o cadastro de seus produtos e materiais em estoque, com todas as informações que sua empresa precisa.</p>
-              </li>
-              <li>
-                <a href="" onclick="ga('send','event','click-feature','estoques','home');">Estoques</a>
-                <p>Acompanhe a situação de seu estoque em uma tabela simples e fácil de entender. Além disso, você pode criar grupos de produtos para facilitar a divisão dos produtos em categorias.</p>
-              </li>
-              <li>
-                <a href="" onclick="ga('send','event','click-feature','entradas','home');">Entradas</a>
-                <p>Adicione produtos ao estoque criando transações de entrada, sejam compras ou ajustes.</p>
-              </li>
-              <li>
-                <a href="" onclick="ga('send','event','click-feature','saidas','home');">Saídas</a>
-                <p>Registre as transações de saída de produtos do estoque. Você pode registrar saídas de venda, consumo, descarte ou ajuste.</p>
-              </li>
-              <li>
-                <a href="" onclick="ga('send','event','click-feature','transacoes','home');">Histórico de transações</a>
-                <p> Todas as entradas e saídas ficam salvas na tabela de transações, com todas as informações que forem relevantes para a sua empresa.</p>
-              </li>
-              <li>
-                <a href="" onclick="ga('send','event','click-feature','personalizacao','home');">Relatórios</a>
-                <p>Visualize de forma fácil seus balanços de compra e venda, personalizando o período. Também é possível criar relatórios com informações personalizadas.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-8 col-md-pull-4 " style="position: relative;">
-            <div class="probootstrap-home-showcase-wrap">
-              <div class="probootstrap-home-showcase-inner">
-                <div class="probootstrap-chrome">
-                  <div><span></span><span></span><span></span></div>
-                </div>
-                <div class="probootstrap-image-showcase">
-                  <ul class="probootstrap-images-list">
-                    <li class="active"><img src="img/Produtos.jpg" alt="Image" class="img-responsive"></li>
-                    <li><img src="img/Estoques.jpg" alt="Image" class="img-responsive"></li>
-                    <li><img src="img/Entradas.jpg" alt="Image" class="img-responsive"></li>
-                    <li><img src="img/Saídas.jpg" alt="Image" class="img-responsive"></li>
-                    <li><img src="img/Transações.jpg" alt="Image" class="img-responsive"></li>
-                    <li><img src="img/Relatórios.jpg" alt="Image" class="img-responsive"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="probootstrap-section probootstrap-bg-white probootstrap-zindex-above-showcase">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
-            <h2>Em qualquer lugar</h2>
-            <p class="lead">Através de nosso aplicativo, você poderá controlar o estoque da sua empresa diretamente da palma da sua mão.</p>
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2  probootstrap-animate"  data-animate-effect="fadeInRight">
-            <div class="item">
-              <img src="img/mobile.jpg" width="100%" alt="Free HTML5 Bootstrap Template by GetTemplates.co">
-            </div>
-        </div>
-      </div>
+  <!-- H E R O -->
+  <section id="hero">
+    <div class="container">
+    <div class="row">
+      
+    </div>
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center section-heading probootstrap-animate">
-          <p><br>Em breve nas lojas de aplicativos.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-border-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 section-heading probootstrap-animate">
-            <h2>Aposta na simplicidade</h2>
-            <p class="lead" style="padding-right:15px;">No meio de tantas opções complicadas, confusas e cheias de informação, nos esforçamos para criar um software de controle de estoque intuitivo, fácil de usar. Com o registro de produtos e transações, você tem tudo que precisa para controlar seus produtos, entradas e saídas. Além disso, facilitamos a visualização das informações relevantes através de belos relatórios.</p>
-          </div>
-
-          <div class="col-md-8  probootstrap-animate"  style="margin-top:40px;"data-animate-effect="fadeInRight">
-           <div class="owl-carousel owl-carousel-fullwidth border-rounded">
-             <div class="item">
-               <img src="img/1.jpg" alt="Majoris">
-             </div>
-             <div class="item">
-               <img src="img/2.jpg" alt="Majoris">
-             </div>
-             <div class="item">
-               <img src="img/3.jpg" alt="Majoris">
-             </div>
-             <div class="item">
-               <img src="img/4.jpg" alt="Majoris">
-             </div>
-             <div class="item">
-               <img src="img/5.jpg" alt="Majoris">
-             </div>
-           </div>
-         </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <a href="form/index.html" class="btn btn-primary btn-lg" role="button" onclick="ga('send','event','register','slider','home');">Cadastre-se</a>
-            <a href="form/index.html" class="btn btn-primary btn-ghost btn-lg" role="button" onclick="ga('send','event','register','experimente','home');">Experimente</a>
-          </div>
-        </div>
-
-        <!-- END row -->
-        </div>
-      </section>
-
-      <section class="probootstrap-section probootstrap-border-top probootstrap-bg-white probootstrap-zindex-above-showcase">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12  probootstrap-animate"  data-animate-effect="fadeInRight">
-              <p>Veja abaixo alguns clientes que também apostam na simplicidade do Majoris:</p>
+          <div class="col-2">
+              <img src="images/logo.png" style="width: 100%;" >
             </div>
-          </div>
-
-          <div class="row">
-
-            <div class="col-md-3 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
-              <img src="img/client_3.png" class="img-responsive" alt="Free Bootstrap Template by uicookies.com">
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
-              <img src="img/client_4.png" class="img-responsive" alt="Free Bootstrap Template by uicookies.com">
-            </div>
-            <div class="clearfix visible-sm-block visible-xs-block"></div>
-            <div class="col-md-3 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
-              <img src="img/client_2.png" class="img-responsive" alt="Free Bootstrap Template by uicookies.com">
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-6 text-center client-logo probootstrap-animate" data-animate-effect="fadeIn">
-              <img src="img/client_1.png" class="img-responsive" alt="Free Bootstrap Template by uicookies.com">
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-    <section class="probootstrap-cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Comece a utilizar o Majoris agora mesmo! </h2>
-            <a href="form/index.html" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft" onclick="ga('send','event','register','pre-footer','home');">Cadastre-se</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="probootstrap-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-4 probootstrap-animate">
-                <div class="probootstrap-footer-widget">
-                  <h3>Links</h3>
-                  <ul>
-                    <li><a href="#" onclick="ga('send','event','click-faq','footer','home');">Perguntas frequentes</a></li>
-                    <li><a href="#" onclick="ga('send','event','click-jobs','footer','home');">Trabalhe conosco</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 probootstrap-animate">
-            <div class="probootstrap-footer-widget">
-              <h3 id="contato">Contato</h3>
-              <p>Ficou com alguma dúvida? Nossa equipe de atendimento está pronta para te ajudar. Basta entrar em contato conosco através do ícone do atendimento, no canto inferior direito da sua tela, ou pelos canais abaixo.</p>
-              <p><small>E-mail: <a href="mailto:contato@majoris.co" onclick="ga('send','event','click-email','footer','home');">contato@majoris.co</a></small></p>
-
-
-            </div>
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row">
-          <div class="col-md-12 copyright probootstrap-animate">
-            <p><small>&copy; 2019 <a href="#">Majoris</a>. Todos os direitos reservados. <br> Blumenau, SC - Brasil</small></p>
-
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-    <!-- Modal login -->
-    <div class="modal fadeInUp probootstrap-animated" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-      <div class="vertical-alignment-helper">
-        <div class="modal-dialog modal-md vertical-align-center">
-          <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cross"></i></button>
-            <div class="probootstrap-modal-flex">
-              <div class="probootstrap-modal-figure" style="background-image: url(img/modal_bg.jpg);"></div>
-              <div class="probootstrap-modal-content">
-                <form action="#" class="probootstrap-form">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password">
-                  </div>
-                  <div class="form-group clearfix mb40">
-                    <label for="remember" class="probootstrap-remember"><input type="checkbox" id="remember"> Remember Me</label>
-                    <a href="#" class="probootstrap-forgot">Forgot Password?</a>
-                  </div>
-                  <div class="form-group text-left">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <input type="submit" class="btn btn-primary btn-block" value="Sign In">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group probootstrap-or">
-                    <span><em>or</em></span>
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <button class="btn btn-primary btn-ghost btn-block btn-connect-facebook"><span>connect with</span> Facebook</button>
-                        <button class="btn btn-primary btn-ghost btn-block btn-connect-google"><span>connect with</span> Google</button>
-                        <button class="btn btn-primary btn-ghost btn-block btn-connect-twitter"><span>connect with</span> Twitter</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-6 offset-1">
+        <span style="color: #0E7FFF !important">MAJORIS</span>
+        <h1 style="color: #343434 !important"><b>Em breve</b></h1>
+        <p style="color: #343434 !important">Redefinindo o poder dos dados</p>
       </div>
     </div>
-    <!-- END modal login -->
-
-    <!-- Modal signup -->
-    <div class="modal fadeInUp probootstrap-animated" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-      <div class="vertical-alignment-helper">
-        <div class="modal-dialog modal-md vertical-align-center">
-          <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cross"></i></button>
-            <div class="probootstrap-modal-flex">
-              <div class="probootstrap-modal-figure" style="background-image: url(img/modal_bg.jpg);"></div>
-              <div class="probootstrap-modal-content">
-                <form action="#" class="probootstrap-form">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Re-type Password">
-                  </div>
-                  <div class="form-group clearfix mb40">
-                    <label for="remember" class="probootstrap-remember"><input type="checkbox" id="remember"> Remember Me</label>
-                    <a href="#" class="probootstrap-forgot">Forgot Password?</a>
-                  </div>
-                  <div class="form-group text-left">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <input type="submit" class="btn btn-primary btn-block" value="Sign Up">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="form-group probootstrap-or">
-                    <span><em>or</em></span>
-                  </div>
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <button class="btn btn-primary btn-ghost btn-block btn-connect-facebook"><span>connect with</span> Facebook</button>
-                        <button class="btn btn-primary btn-ghost btn-block btn-connect-google"><span>connect with</span> Google</button>
-                        <button class="btn btn-primary btn-ghost btn-block btn-connect-twitter"><span>connect with</span> Twitter</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- END modal signup -->
+  </section>
+  <!-- E N D  H E R O -->
 
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
-    <script src="js/scripts.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script>
-      window.intercomSettings = {
-        app_id: "w45egzdu"
-      };
-    </script>
-    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/w45egzdu';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- External JavaScripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/4980428.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
   </body>
 </html>
