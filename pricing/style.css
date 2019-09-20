@@ -1,0 +1,47 @@
+*{
+    font-family: Rubik !important;
+    border:none !important;
+    border-radius: 0px !important;
+}
+
+#loading, #results {
+        display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+}
+
+.logo{
+    max-width:200px;
+}
+
+.main{
+    margin-top:80px;
+}
+
+.majoris{
+    margin-top:20px;
+    margin-bottom:40px;
+    font-size:24px;
+}
+
+.majorize{
+    background-color: #f2f2f2 !important;
+    padding: 10px;
+    color:#2b2b2b;
+}
+
+.majorize:focus{
+    background-color: #f2f2f2 !important;
+    outline:none !important;
+}
+
+.mjrs{
+    background: linear-gradient(90deg,#3B97FF,#0E7FFF);
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+}
