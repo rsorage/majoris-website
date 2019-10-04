@@ -1,45 +1,31 @@
 {
-  "name": "majoris-ims-frontend",
-  "version": "1.0.0",
-  "description": "Majoris Stock Keeper Application - frontend",
-  "main": "server.js",
+  "name": "majoris-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "3.2.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abnerhorn/majoris-ims.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "majoris",
-    "stock",
-    "keeper"
-  ],
-  "author": {
-    "name": "Abner Horn",
-    "email": "abnerthorn@gmail.com"
-  },
-  "contributor": {
-    "name": "Ramon Sorage",
-    "email": "rsorage@gmail.com"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abnerhorn/majoris-ims/issues"
-  },
-  "homepage": "https://github.com/abnerhorn/majoris-ims#readme",
-  "devDependencies": {
-    "browser-sync": "latest",
-    "gulp": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-clean-css": "latest",
-    "gulp-concat": "latest",
-    "gulp-minify-css": "latest",
-    "gulp-notify": "latest",
-    "gulp-plumber": "latest",
-    "gulp-rename": "latest",
-    "gulp-sass": "latest",
-    "gulp-sourcemaps": "latest",
-    "gulp-uglify": "latest"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
