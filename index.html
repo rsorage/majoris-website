@@ -50,10 +50,10 @@
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="probootstra-cta-button last" style='margin-right: 10px;'>
-              <a href="mrp" class="btn btn-ghost" style='color: #959595; border: none !important;'>CONTROLE DE ESTOQUE</a>
+              <a href="mrp" class="btn btn-ghost" style='color: #959595; border: none !important;' onclick="ga('send','event','go-to-mrp','navbar','analytics')">CONTROLE DE ESTOQUE</a>
             </li>
             <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#loginModal"
-              onclick="ga('send','event','abrir-contato','navbar','home')">CONTATO</a></li>
+              onclick="ga('send','event','abrir-contato','navbar','analytics')">CONTATO</a></li>
           </ul>
         </div>
       </div>
@@ -70,9 +70,9 @@
               Sua empresa ainda precisa criar relatórios, planilhas, fórmulas e gráficos para visualizar dados importantes?
             </p>
             <div style='color: #343434; margin-bottom: 10px;'>
-              <b>PARE DE PERDER TEMPO!</b>
+              <b>PARE DE PERDER TEMPO:</b>
             </div>
-            <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal" role="button" onclick="ga('send','event','testar','hero','home');">ACESSO ANTECIPADO</a>
+            <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal" role="button" onclick="ga('send','event','acesso-antecipado','hero','analytics');">ACESSO ANTECIPADO</a>
           </div>
           <div class='col-md-7 section-heading probootstrap-animate'>
             <img src="img/analytics.png" alt="Image" class="img-responsive">
@@ -96,20 +96,20 @@
               <div class="col-md-4 probootstrap-showcase-nav">
                 <ul>
                   <li class="active">
-                    <a href="" onclick="ga('send','event','see-answer','custo-insumos','home');">Qual é o percentual que cada insumo de produção está impactando no meu lucro?</a>
+                    <a href="" onclick="ga('send','event','see-answer','custo-insumos','analytics');">Qual é o percentual que cada insumo de produção está impactando no meu lucro?</a>
                   </li>
                   <li>
-                    <a href="" onclick="ga('send','event','see-answer','material-desperdicio','home');">Quanto material a minha produção desperdiçou nos últimos 60 dias?</a>
+                    <a href="" onclick="ga('send','event','see-answer','material-desperdicio','analytics');">Quanto material a minha produção desperdiçou nos últimos 60 dias?</a>
                   </li>
                   <li>
-                    <a href="" onclick="ga('send','event','see-answer','gastei-material','home');">Quanto eu gastei com matéria prima esse mês?</a>
+                    <a href="" onclick="ga('send','event','see-answer','gastei-material','analytics');">Quanto eu gastei com matéria prima esse mês?</a>
                   </li>
                   <li>
-                      <a href="" onclick="ga('send','event','see-answer','total-estoque','home');">Qual é o valor total do meu estoque?</a>
+                      <a href="" onclick="ga('send','event','see-answer','total-estoque','analytics');">Qual é o valor total do meu estoque?</a>
                   </li>
 
                   <li>
-                    <a href="" onclick="ga('send','event','see-answer','vendas-epoca','home');">Quais são as épocas do ano em que eu mais vendo meu produto?</a>
+                    <a href="" onclick="ga('send','event','see-answer','vendas-epoca','analytics');">Quais são as épocas do ano em que eu mais vendo meu produto?</a>
                   </li>
                 </ul>
               </div>
@@ -138,12 +138,38 @@
       </div>
     </section>
 
+    <section class="probootstrap-section proboostrap-clients probootstrap-bg-white probootstrap-border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center section-heading probootstrap-animate">
+            <h2>Simplicidade total</h2>
+            <p class="lead" style="padding-right:15px;">No Majoris, nenhum conhecimento técnico é necessário: para customizar, basta clicar e arrastar.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2  probootstrap-animate"  data-animate-effect="fadeInRight">
+              <div class="item">
+                <img src="img\Widgets.jpg" width="100%" alt="Loja de widgets">
+              </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#loginModal" onclick="ga('send','event','acesso-antecipado','loja-widgets','analytics');">Acesso antecipado</a>
+        </div>
+      </div>
+
+      </section>
+
     <section class="probootstrap-cta">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">Ficou com alguma dúvida? </h2>
-            <a href="javascript:$zopim.livechat.window.show();" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft" onclick="ga('send','event','abrir-chat','zendesk','home');">Abrir chat</a>
+            <a href="javascript:$zopim.livechat.window.show();" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft" onclick="ga('send','event','abrir-chat','zendesk','analytics');">Abrir chat</a>
           </div>
         </div>
       </div>
@@ -156,7 +182,7 @@
             <div class="probootstrap-footer-widget">
               <h3 id="contato">Contato</h3>
               <p>Nossa equipe está sempre pronta para lhe atender. Basta entrar em contato conosco através do ícone do atendimento, no canto inferior direito da sua tela, ou pelos canais abaixo.</p>
-              <p><small>E-mail: <a href="mailto:contato@majoris.co" onclick="ga('send','event','click-email','footer','home');">contato@majoris.co</a><br>Telefone: +55 (47) 9 9963-1083</small></p>
+              <p><small>E-mail: <a href="mailto:contato@majoris.co" onclick="ga('send','event','click-email','footer','analytics');">contato@majoris.co</a><br>Telefone: +55 (47) 9 9963-1083</small></p>
 
             </div>
           </div>
@@ -201,7 +227,7 @@
                             </div>
                             <br>
                             <div class="form-group">
-                              <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Enviar" onclick="ga('send','event','enviar-contato','modal','home');">
+                              <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Enviar" onclick="ga('send','event','enviar-contato','modal','analytics');">
                             </div>
                           </form>
                         </div>
