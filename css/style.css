@@ -414,6 +414,37 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 
+.logo-form{
+  width: 120px; 
+  padding-top:60px; 
+  display: block;
+  margin: 0 auto;
+}
+
+.option{
+  background-color: #fafafa;
+  padding: 20px;
+  margin-top:10px;
+  font-size:16px;
+  transition: 0.5s;
+}
+
+.option:hover{
+  background-color: #ffffff;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05);
+}
+
+.options{
+  color:#959595;
+  font-weight: 500;
+  transition: 0.1s;
+}
+
+.options:hover{
+  color:#343434;
+  font-weight: 500;
+}
+
 .container-fluid .dropdown-submenu .dropdown-menu {
   top: 0;
   left: auto;
