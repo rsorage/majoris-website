@@ -1,173 +1,585 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Todas as promoções dos supermercados próximos a você reunidas em um único aplicativo. Disponível para Android e iOS.">
-    <meta name="author" content="Majoris">
-    <title>Majoris - o app para economizar no supermercado</title>
-    <!-- Preloader -->
-    <style>
-        @keyframes hidePreloader {
-            0% {
-                width: 100%;
-                height: 100%;
-            }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-            100% {
-                width: 0;
-                height: 0;
-            }
-        }
+  <title>Majoris</title>
+  <meta content="" name="description">
 
-        body>div.preloader {
-            position: fixed;
-            background: white;
-            width: 100%;
-            height: 100%;
-            z-index: 1071;
-            opacity: 0;
-            transition: opacity .5s ease;
-            overflow: hidden;
-            pointer-events: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+  <meta content="" name="keywords">
 
-        body:not(.loaded)>div.preloader {
-            opacity: 1;
-        }
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        body:not(.loaded) {
-            overflow: hidden;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-        body.loaded>div.preloader {
-            animation: hidePreloader .5s linear .5s forwards;
-        }
-    </style>
-    <script>
-        window.addEventListener("load", function() {
-            setTimeout(function() {
-                document.querySelector('body').classList.add('loaded');
-            }, 300);
-        });
-    </script>
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/brand/favicon-app.png" type="image/png"><!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
-    <!-- Quick CSS -->
-    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.4.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#footer">Tenho dúvidas</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-    
-    <!-- Go Pro -->
-    <a href="para-supermercados.html" class="btn btn-block btn-dark text-truncate rounded-0 py-2 d-none d-lg-block" style="z-index: 1000;" target="_blank">
-        <strong>Soluções para Supermercados</strong> →
-    </a>
-    
-    <!-- Main content -->
-    <section class="slice py-7">
-        <div class="container">
-            <div class="row row-grid align-items-center">
-                <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
-                    <!-- Heading -->
-                    <a class="navbar-brand" href="index.html">
-                        <img alt="Image placeholder" src="assets/img/brand/dark.svg" style="width: 150px;" id="navbar-logo">
-                    </a>
-                    <h1 class="text-center text-md-left mb-3" style="margin-top: 50px;">
-                        <strong style="line-height: 1.2; display:inline-block;">O app para economizar no supermercado</strong>
-                    </h1>
-                    <!-- Text -->
-                    <p class="lead text-center text-md-left text-muted">
-                        Todas as promoções das principais redes de supermercado próximas a você, em um único lugar.
-                    </p>
-                    <p class=" text-center text-md-left" style="font-size: 10px;"> <strong style="font-weight: 800;"> Disponível em Blumenau (SC)</strong> - mais cidades nas próximas semanas.</p>
-                    <!-- Buttons -->
-                    <div class="text-center text-md-left mt-5">
-                        <a href="https://bit.ly/majoris-android" class="btn btn-primary btn-icon" target="_blank">
-                            <span class="btn-inner--icon"><i class="fab fa-android"></i></span>
-                            <span class="btn-inner--text">Baixar para Android</span> 
-                        </a>
-                        <a href="https://apps.apple.com/br/app/majoris/id1515567201" class="btn btn-secondary btn-icon" target="_blank">
-                            <span class="btn-inner--icon"><i class="fab fa-apple"></i></span>
-                            <span class="btn-inner--text">Baixar para iOS</span> 
-                        </a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-5 col-lg-6 order-md-2 text-center">
-                    <!-- Image -->
-                    <figure class="w-100">
-                        <img alt="Aplicativo Majoris" src="assets/img/app.png" class="img-fluid0" style="width: 90%;">
-                    </figure>
-                </div>
-                
-            </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">A assinatura que  automatiza  suas compras e gera  economia.</h1>
         </div>
-    </section>
-    
-    <footer>
-            <!-- Footer -->
-            <div class="container pt-4">
-               
-                <hr class="divider divider-fade divider-dark my-4">
-                <div class="row align-items-center justify-content-md-between pb-4">
-                    <div class="col-md-6">
-                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                            &copy; 2021 <a href="https://majoris.app" class="font-weight-bold" target="_blank">Majoris</a>. Todos os direitos reservados
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="para-supermercados.html">
-                                    Para supermercados 
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="https://v2.api.majoris.app/legal-agreements/5f08b4d7c6b6df317b47fd79/versions/latest/file">
-                                    Privacidade
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="https://facebook.com/usemajoris">
-                                    Facebook
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" target="_blank" href="https://instagram.com/usemajoris">
-                                    Instagram
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="col-lg-7 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Quem somos</h3>
+              <h2>O que é o Majoris?</h2>
+              <p>
+                Somos um clube de assinatura de supermercado. <br><br>Colocamos suas compras no <b>piloto automático</b>, entregamos na sua casa e ajudamos você a economizar.<br><br>A mensalidade custa apenas R$ 12, não há custos de frete e nossos produtos são mais em conta que supermercados tradicionais.
+              </p>            
             </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row feture-tabs">
+
+          <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+              <h3>Automatize suas compras</h3>
+              <ol class="automate">
+                <li>Selecione os itens que não podem faltar na sua casa</li>
+                <li>Programe a recorrência de cada item</li>
+                <li>Receba as compras no conforto da sua casa</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/gif.gif" class="img-height" alt="">
+          </div>
+        </div> 
+        <!-- / row -->
         
-    </footer>
-    <!-- Core JS  -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
-    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
-    <!-- Quick JS -->
-    <script src="assets/js/quick-website.js"></script>
-    <!-- Feather Icons -->
-    <script>
-        feather.replace({
-            'width': '1em',
-            'height': '1em'
-        })
-    </script>
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row feture-tabs">
+
+          <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+              <h3>Cesta flexível</h3>
+              <p>Você pode adicionar ou remover itens da compra de cada semana, até 24 horas antes do dia da entrega.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/cesta-flexivel.png" class="img-height" alt="">
+          </div>
+        </div> 
+        <!-- / row -->
+        
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row feture-tabs">
+
+          <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+              <h3>Economize</h3>
+              <p>Nosso modelo garante preços menores para os itens essenciais do seu dia a dia.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/economize.jpg" class="img-height" alt="">
+          </div>
+        </div> 
+        <!-- / row -->
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+
+        <div id="partnership" class="row feture-tabs" >
+
+          <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0 d-flex">
+            
+            <div class="row align-self-center gy-4">
+              <img class="partnership" src="assets/img/partner.png">
+              <h3>Estamos chegando!</h3>
+              <p>O Majoris estará disponível em Santarém-PA dentro de poucas semanas, em parceria com o Grupo CR.</p>
+              <p>Não perca tempo, e garanta <b>acesso antecipado</b>.</p>
+              <div data-aos="fade-up" data-aos-delay="600">
+                <div class="text-center text-lg-start">
+                  <a href="acesso-antecipado.html" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Quero assinar</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/curved.jpg" class="img-partnership" alt="">
+          </div>
+        </div> 
+        
+
+
+
+      </div>
+
+                <!-- ======= Testimonials Section ======= -->
+                <section id="testimonials" style="margin-top: 80px;" class="testimonials">
+
+                  <div class="container" data-aos="fade-up">
+            
+                    <header class="section-header">
+                      <h2>Depoimentos</h2>
+                      <p>O que nossos assinantes estão falando</p>
+                    </header>
+            
+                    <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
+                      <div class="swiper-wrapper">
+            
+                        <div class="swiper-slide">
+                          <div class="testimonial-item">
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                              Sou assinante há 4 meses, e não troco por nada. Não consigo nem pensar em voltar a fazer minhas compras do jeito antigo. Automatizar as compras pelo Majoris é fantástico. Agora, posso aproveitar meu tempo de forma muito melhor.
+                            </p>
+                            <div class="profile mt-auto">
+                              <img src="assets/img/testimonials/josias.jpg" class="testimonial-img" alt="">
+                              <h3>Josias Silva</h3>
+                            </div>
+                          </div>
+                        </div><!-- End testimonial item -->
+            
+                        <div class="swiper-slide">
+                          <div class="testimonial-item">
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                              O Majoris simplificou e agilizou minha rotina de compras semanais, garantindo a entrega dos itens que compro com recorrência, evitando trânsito, gastos com gasolina e filas nos caixas de mercados.
+                            </p>
+                            <div class="profile mt-auto">
+                              <img src="assets/img/testimonials/felipe.jpg" class="testimonial-img" alt="">
+                              <h3>Felipe Rischbieter</h3>
+                            </div>
+                          </div>
+                        </div><!-- End testimonial item -->
+            
+                        <div class="swiper-slide">
+                          <div class="testimonial-item">
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                              Depois que assinamos o Majoris, nossa vida ficou muito mais simples. Só de pensar que não preciso mais perder horas no supermercado toda semana já me dá um alívio enorme.
+                            </p>
+                            <div class="profile mt-auto">
+                              <img src="assets/img/testimonials/pamela.jpg" class="testimonial-img" alt="">
+                              <h3>Pamela Almeida</h3>
+                            </div>
+                          </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                          <div class="testimonial-item">
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                              Cara, o Majoris facilitou demais a minha vida. Ir no supermercado era um stress pra mim. Hoje, eu simplesmente deixo essa responsabilidade para o app. Além disso, os preços são muito em conta.
+                            </p>
+                            <div class="profile mt-auto">
+                              <img src="assets/img/testimonials/guilherme.jpg" class="testimonial-img" alt="">
+                              <h3>Guilherme Bremer</h3>
+                            </div>
+                          </div>
+                        </div><!-- End testimonial item -->
+            
+            
+                        <div class="swiper-slide">
+                          <div class="testimonial-item">
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                              Para mim, o Majoris mudou meu jeito de viver. Me deu mais tempo para coisas importantes como família, lazer, trabalho... Não quero mais viver sem essa facilidade, confio no trabalho da equipe e não tenho problemas!                            </p>
+                            <div class="profile mt-auto">
+                              <img src="assets/img/testimonials/denise.jpg" class="testimonial-img" alt="">
+                              <h3>Denise Vieira</h3>
+                            </div>
+                          </div>
+                        </div><!-- End testimonial item -->
+
+
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+            
+                  </div>
+            
+                </section><!-- End Testimonials Section -->
+
+   
+    <!-- ======= F.A.Q Section ======= -->
+    <section  id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Dúvidas frequentes</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+
+            
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Como funciona?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    O Majoris é um formato de supermercado online por assinatura.
+                    <br><br>
+                    Ao realizar a assinatura, você receberá um dia da semana que será o seu dia de entrega. O dia será de acordo com o bairro em que você mora.
+                    <br><br>
+                    No app, você poderá selecionar todos os itens que deseja receber, e a frequência com a qual deseja receber cada item. Por exemplo: receber 1kg de arroz a cada duas semanas, receber 3 caixas de leite toda semana, etc.
+                    <br><br>
+                    Na tela inicial do app, você verá todas as suas entregas futuras, e poderá personalizá-las. Você pode adicionar itens para uma entrega específica, até 24 horas antes do dia da mesma.
+                    <br><br>
+                    Dessa forma, você pode programar recorrência dos itens frequentes, e adicionar caso a caso os itens mais pontuais 😉
+                    <br><br>
+                    Se não quiser programar nenhuma recorrência, você pode simplesmente montar sua cesta de compras a cada semana.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Vou receber a mesma compra toda semana?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Depende da programação que você fizer!
+                    <br><br>
+                    Se você programar itens com frequências diferentes, cada semana terá uma cesta diferente. Se você programar todos os itens para terem frequência semanal (uma vez a cada semana), você receberá a mesma cesta toda semana.
+                    <br><br>
+                    Além disso, você provavelmente vai incluir itens adicionais nas suas entregas semanais - afinal, sempre tem aquele item que nós não tínhamos previsto, não é mesmo!? 😆
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Com que frequência vou receber minhas compras?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Ao assinar o Majoris, você ganha direito uma entrega por semana, no dia pré-determinado de acordo com seu bairro (pode ser toda segunda, toda terça, etc.).
+                    <br><br>
+                    Quem vai definir o que vai receber em cada um desses dias é você! Você pode programar para receber certos itens toda semana, outros itens a cada 15 dias, outros itens a cada 3 ou 4 semanas, e assim por diante.
+                    <br><br>
+                    Você também pode adicionar itens somente para uma entrega específica, desde que adicione até 24 horas antes do dia de entrega.
+                    <br><br>
+                    Quem manda é você! 🤩
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    Quanto custa a assinatura?
+                  </button>
+                </h2>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    R$ 12 por mês. Esse valor já cobre todos os fretes!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    Tenho que pagar frete?
+                  </button>
+                </h2>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Não. A mensalidade já cobre todas as entregas 😉
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                    Quais as formas de pagamento aceitas?
+                  </button>
+                </h2>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Para a mensalidade, aceitamos crédito e débito. O pagamento é feito pelo aplicativo, de forma automática.
+                    <br><br>
+                    Para as compras, aceitamos todos os cartões que são aceitos nas lojas do Grupo CR. Os pagamentos das compras são realizados na maquininha, no ato da entrega
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Posso escolher o dia e horário que vou receber minhas compras?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Quando você assina o Majoris e informa seu endereço, você recebe um dia da semana que será o dia das suas entregas.
+                    <br><br>
+                    Você poderá escolher se deseja receber as compras no período da manhã ou da tarde.
+                    <br><br>
+                    Caso você não esteja em casa para receber uma compra, você pode acionar nosso suporte e encontraremos uma solução 😉
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Não vou mais precisar ir ao mercado?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    O principal objetivo do Majoris é automatizar suas compras pesadas do dia a dia, além de gerar economia. 
+                    <br><br>
+                    Isso significa que tudo aquilo que é mais repetitivo, mais "rotina", você poderá delegar para o app.  
+                    <br><br>
+                    Com isso, você só vai precisar ir para o mercado quando quiser comprar produtos mais selecionados - aqueles que você escolhe "com as mãos" 😜
+                    <br><br>
+                    Ou seja, você não precisa mais ir ao mercado por obrigação - apenas por diversão!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Que tipo de produtos o Majoris vende?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Alimentos não perecíveis, bebidas alcóolicas e não-alcóolicas, produtos de limpeza e higiene pessoal.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-4">
+                    Como é feito o pagamento das compras?
+                  </button>
+                </h2>
+                <div id="faq2-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Na maquininha de cartão, no momento da entrega.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-5">
+                    Os preços dos produtos variam de uma semana para a outra?
+                  </button>
+                </h2>
+                <div id="faq2-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Os preços dos produtos podem variar de uma semana para outra. Na página de edição de uma entrega, você sempre pode conferir os preços atualizados.
+                    <br><br>
+                    O valor da compra será computado com base no preço dos produtos no dia do fechamento do pedido, que é sempre na antevéspera do dia da entrega. 
+                    <br><br>
+                    Ou seja, se seu dia de entrega é na quinta-feira, o fechamento acontece na meia noite de terça para quarta. Antes disso, você pode realizar alterações à vontade!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-6">
+                    Tem valor mínimo de compra?
+                  </button>
+                </h2>
+                <div id="faq2-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Não! Mas como é apenas uma entrega na semana, é sempre bom aproveitar e já incluir na cesta tudo que vai precisar para a semana toda 😉
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+           
+
+          </div>
+
+          <div class="col-lg-12 align-items-center" style="margin-top: 60px;">
+              <p class="text-center">Ainda tem dúvidas? <a target="_blank" href="https://api.whatsapp.com/send?phone=554796816309"><b>Fale conosco!</b></a></p>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Majoris Serviços de Tecnologia LTDA 
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+    
+    <div class="sign-up">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Estamos chegando em Santarém-PA</h3>
+            <p style="margin-top: 12px;">Em parceria com o Grupo CR.</p> 
+          </div>
+          <div class="col-md-6">
+            <a href="acesso-antecipado.html">Conseguir acesso antecipado</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
