@@ -87,6 +87,19 @@ body{
 
     }
     
+    .mensalidade{
+        font-size: 12px;
+        font-weight: 100;
+        padding-top: 13px;
+        line-height: 6px;
+    }
+    .footer{
+        background-color: #2b2b2b;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+    }
 }
     
 
@@ -103,7 +116,7 @@ body{
 /* TABLET + DESKTOP */
 @media (min-width: 768px) {
     .hero{
-        height: calc(100vh - 72px);
+        height: calc(100vh - 103px);
     }
     
     h1{
@@ -118,7 +131,7 @@ body{
     .call-to-action-lg{
         display: flex;
         align-items: center;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     .call-to-action-mobile{
         display: none;
@@ -132,6 +145,19 @@ body{
 
     .video-caption-mobile{
         display: none;
+    }
+
+    .mensalidade{
+        font-size: 14px;
+        font-weight: 100;
+        padding-top: 14px;
+    }
+    .footer{
+        background-color: #2b2b2b;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
     }
 
 }
